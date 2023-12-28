@@ -1,0 +1,104 @@
+E:\Form_ShopConCung\Form_ShopConCung\bin\Debug\Form_ShopConCung.exe.config
+E:\Form_ShopConCung\Form_ShopConCung\bin\Debug\Form_ShopConCung.exe
+E:\Form_ShopConCung\Form_ShopConCung\bin\Debug\Form_ShopConCung.pdb
+E:\Form_ShopConCung\Form_ShopConCung\obj\Debug\Form_QuanLy_ShopConCung.csproj.AssemblyReference.cache
+E:\Form_ShopConCung\Form_ShopConCung\obj\Debug\Form_ShopConCung.frm_sanpham.resources
+E:\Form_ShopConCung\Form_ShopConCung\obj\Debug\Form_ShopConCung.Properties.Resources.resources
+E:\Form_ShopConCung\Form_ShopConCung\obj\Debug\Form_QuanLy_ShopConCung.csproj.GenerateResource.cache
+E:\Form_ShopConCung\Form_ShopConCung\obj\Debug\Form_QuanLy_ShopConCung.csproj.CoreCompileInputs.cache
+E:\Form_ShopConCung\Form_ShopConCung\obj\Debug\Form_ShopConCung.exe
+E:\Form_ShopConCung\Form_ShopConCung\obj\Debug\Form_ShopConCung.pdb
+E:\Form_ShopConCung\Form_ShopConCung\obj\Debug\Form_ShopConCung.frm_khachhang.resources
+E:\Form_ShopConCung\Form_ShopConCung\obj\Debug\Form_ShopConCung.frm_donhang.resources
+E:\Form_ShopConCung\Form_ShopConCung\obj\Debug\Form_ShopConCung.frm_danhmucsanpham.resources
+E:\Form_ShopConCung\Form_ShopConCung\obj\Debug\Form_ShopConCung.frm_chitietdonhang.resources
+E:\Form_ShopConCung\Form_ShopConCung\obj\Debug\Form_ShopConCung.frm_main.resources
+E:\Form_ShopConCung\Form_ShopConCung\obj\Debug\Form_ShopConCung.frm_slider.resources
+E:\Form_ShopConCung\Form_ShopConCung\bin\Debug\FontAwesome.Sharp.dll
+E:\Form_ShopConCung\Form_ShopConCung\obj\Debug\Form_QuanLy_ShopConCung.csproj.CopyComplete
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\Form_ShopConCung.exe.config
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\Form_ShopConCung.exe
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\Form_ShopConCung.pdb
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\FontAwesome.Sharp.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\Guna.UI2.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\obj\Debug\Form_QuanLy_ShopConCung.csproj.AssemblyReference.cache
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\obj\Debug\Form_ShopConCung.frm_chitietdonhang.resources
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\obj\Debug\Form_ShopConCung.frm_danhmucsanpham.resources
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\obj\Debug\Form_ShopConCung.frm_donhang.resources
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\obj\Debug\Form_ShopConCung.frm_khachhang.resources
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\obj\Debug\Form_ShopConCung.frm_main.resources
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\obj\Debug\Form_ShopConCung.frm_sanpham.resources
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\obj\Debug\Form_ShopConCung.Properties.Resources.resources
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\obj\Debug\Form_QuanLy_ShopConCung.csproj.GenerateResource.cache
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\obj\Debug\Form_QuanLy_ShopConCung.csproj.CoreCompileInputs.cache
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\obj\Debug\Form_QuanLy_ShopConCung.csproj.CopyComplete
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\obj\Debug\Form_ShopConCung.exe
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\obj\Debug\Form_ShopConCung.pdb
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\obj\Debug\Form_ShopConCung.SANPHAM.resources
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\obj\Debug\Form_ShopConCung.frm_home.resources
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\obj\Debug\Form_ShopConCung.frm_nhanvien.resources
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\obj\Debug\Form_ShopConCung.frm_taikhoan.resources
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\obj\Debug\Form_ShopConCung.frm_indssanpham.resources
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\EntityFramework.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\EntityFramework.SqlServer.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\Microsoft.ReportViewer.Common.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\Microsoft.ReportViewer.Design.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\Microsoft.SqlServer.Types.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\EnvDTE.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\stdole.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\EntityFramework.xml
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\EntityFramework.SqlServer.xml
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\EnvDTE.xml
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\rptsanpham.rdlc
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\obj\Debug\Form_ShopConCung.frm_indskhachhang.resources
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\rptkhachhang.rdlc
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\obj\Debug\Form_ShopConCung.frm_indsnhanvien.resources
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\rptnhanvien.rdlc
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\obj\Debug\Form_ShopConCung.frm_slider.resources
