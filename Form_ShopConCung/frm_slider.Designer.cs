@@ -273,7 +273,7 @@
 			this.slidebarContainer.Dock = System.Windows.Forms.DockStyle.Left;
 			this.slidebarContainer.Location = new System.Drawing.Point(0, 130);
 			this.slidebarContainer.Name = "slidebarContainer";
-			this.slidebarContainer.Size = new System.Drawing.Size(250, 559);
+			this.slidebarContainer.Size = new System.Drawing.Size(250, 597);
 			this.slidebarContainer.TabIndex = 12;
 			// 
 			// pictureBox2
@@ -315,6 +315,8 @@
 			this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.button8.UseVisualStyleBackColor = false;
 			this.button8.Click += new System.EventHandler(this.button8_Click);
+			this.button8.MouseEnter += new System.EventHandler(this.button8_MouseEnter);
+			this.button8.MouseLeave += new System.EventHandler(this.button8_MouseLeave);
 			// 
 			// tkContainer
 			// 
@@ -560,11 +562,12 @@
 			this.gbdangnhap.Controls.Add(this.txttaikhoan);
 			this.gbdangnhap.Controls.Add(this.btndangki);
 			this.gbdangnhap.Controls.Add(this.label3);
-			this.gbdangnhap.Location = new System.Drawing.Point(249, 130);
+			this.gbdangnhap.Location = new System.Drawing.Point(0, 130);
 			this.gbdangnhap.Name = "gbdangnhap";
-			this.gbdangnhap.Size = new System.Drawing.Size(949, 558);
+			this.gbdangnhap.Size = new System.Drawing.Size(1198, 597);
 			this.gbdangnhap.TabIndex = 74;
 			this.gbdangnhap.TabStop = false;
+			this.gbdangnhap.Enter += new System.EventHandler(this.gbdangnhap_Enter);
 			// 
 			// guna2ImageButton1
 			// 
@@ -575,7 +578,7 @@
 			this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
 			this.guna2ImageButton1.ImageRotate = 0F;
 			this.guna2ImageButton1.ImageSize = new System.Drawing.Size(200, 119);
-			this.guna2ImageButton1.Location = new System.Drawing.Point(376, 126);
+			this.guna2ImageButton1.Location = new System.Drawing.Point(501, 146);
 			this.guna2ImageButton1.Name = "guna2ImageButton1";
 			this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(199, 118);
 			this.guna2ImageButton1.Size = new System.Drawing.Size(200, 140);
@@ -587,7 +590,7 @@
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(88)))), ((int)(((byte)(127)))));
-			this.label1.Location = new System.Drawing.Point(273, 74);
+			this.label1.Location = new System.Drawing.Point(389, 94);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(450, 49);
 			this.label1.TabIndex = 85;
@@ -606,7 +609,7 @@
 			this.txtmatkhau.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.txtmatkhau.ForeColor = System.Drawing.Color.Black;
 			this.txtmatkhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.txtmatkhau.Location = new System.Drawing.Point(331, 314);
+			this.txtmatkhau.Location = new System.Drawing.Point(456, 334);
 			this.txtmatkhau.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.txtmatkhau.Name = "txtmatkhau";
 			this.txtmatkhau.PasswordChar = '*';
@@ -620,7 +623,7 @@
 			this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.label4.AutoSize = true;
 			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.Location = new System.Drawing.Point(185, 273);
+			this.label4.Location = new System.Drawing.Point(310, 293);
 			this.label4.Margin = new System.Windows.Forms.Padding(15);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(81, 20);
@@ -641,7 +644,7 @@
 			this.btndangnhap.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
 			this.btndangnhap.ForeColor = System.Drawing.Color.Black;
 			this.btndangnhap.Image = global::Form_ShopConCung.Properties.Resources.login;
-			this.btndangnhap.Location = new System.Drawing.Point(608, 360);
+			this.btndangnhap.Location = new System.Drawing.Point(733, 380);
 			this.btndangnhap.Name = "btndangnhap";
 			this.btndangnhap.Size = new System.Drawing.Size(156, 45);
 			this.btndangnhap.TabIndex = 79;
@@ -662,7 +665,7 @@
 			this.txttaikhoan.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.txttaikhoan.ForeColor = System.Drawing.Color.Black;
 			this.txttaikhoan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.txttaikhoan.Location = new System.Drawing.Point(331, 268);
+			this.txttaikhoan.Location = new System.Drawing.Point(456, 288);
 			this.txttaikhoan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.txttaikhoan.Name = "txttaikhoan";
 			this.txttaikhoan.PasswordChar = '\0';
@@ -686,7 +689,7 @@
 			this.btndangki.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
 			this.btndangki.ForeColor = System.Drawing.Color.Black;
 			this.btndangki.Image = global::Form_ShopConCung.Properties.Resources.register;
-			this.btndangki.Location = new System.Drawing.Point(333, 360);
+			this.btndangki.Location = new System.Drawing.Point(458, 380);
 			this.btndangki.Name = "btndangki";
 			this.btndangki.Size = new System.Drawing.Size(156, 45);
 			this.btndangki.TabIndex = 80;
@@ -699,7 +702,7 @@
 			this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.label3.AutoSize = true;
 			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(185, 319);
+			this.label3.Location = new System.Drawing.Point(310, 339);
 			this.label3.Margin = new System.Windows.Forms.Padding(15);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(77, 20);
@@ -715,10 +718,10 @@
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.BackColor = System.Drawing.SystemColors.Control;
-			this.ClientSize = new System.Drawing.Size(1201, 689);
-			this.Controls.Add(this.gbdangnhap);
+			this.ClientSize = new System.Drawing.Size(1201, 727);
 			this.Controls.Add(this.slidebarContainer);
 			this.Controls.Add(this.panel8);
+			this.Controls.Add(this.gbdangnhap);
 			this.IsMdiContainer = true;
 			this.Name = "frm_slider";
 			this.Text = "frm_slider";

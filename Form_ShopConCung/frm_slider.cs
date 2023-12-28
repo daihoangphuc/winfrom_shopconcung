@@ -38,8 +38,6 @@ namespace Form_ShopConCung
 			pn_danhmuc.Visible = false;
 			pn_donhang.Visible = false;
 			pn_khachhang.Visible = false;
-			
-
 			pn_btndangxuat.Visible = false;
 
 			fhome = new frm_home();
@@ -496,6 +494,21 @@ namespace Form_ShopConCung
 			txttaikhoan.Clear();
 			txtmatkhau.Clear();
 			//tabControl1.SelectedTab = tabDangNhap; // Chọn tab đăng nhập
+		}
+
+		private void gbdangnhap_Enter(object sender, EventArgs e)
+		{
+
+		}
+
+		private void button8_MouseEnter(object sender, EventArgs e)
+		{
+			button8.BackColor = Color.DeepPink;
+		}
+
+		private void button8_MouseLeave(object sender, EventArgs e)
+		{
+			button8.BackColor = SystemColors.ActiveCaptionText;
 		}
 	}
 }
