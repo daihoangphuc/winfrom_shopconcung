@@ -41,5 +41,29 @@ namespace Form_ShopConCung
 			reportViewer1.LocalReport.DataSources.Add(nguon);
             this.reportViewer1.RefreshReport();
         }
-    }
+
+		private void reportViewer1_Load(object sender, EventArgs e)
+		{
+			DBContext context = new DBContext();
+			List<KhachHang> liskh = context.KhachHangs.ToList();
+			List<Khachhang_Report> listreport = new List<Khachhang_Report>();
+			foreach (KhachHang k in liskh)
+			{
+				Khachhang_Report temp = new Khachhang_Report();
+				temp.MaKhachHang = k.MaKhachHang;
+				temp.HoTen = k.HoTen;
+				temp.GioiTinh = k.GioiTinh;
+				temp.DiaChi = k.DiaChi;
+				temp.SDT = k.SDT;
+
+				listreport.Add(temp);
+
+			}
+			reportViewer1.LocalReport.ReportPath = "rptkhachhang.rdlc";
+			var nguon = new ReportDataSource("KhachhangDataset", listreport);
+			reportViewer1.LocalReport.DataSources.Clear();
+			reportViewer1.LocalReport.DataSources.Add(nguon);
+			this.reportViewer1.RefreshReport();
+		}
+	}
 }

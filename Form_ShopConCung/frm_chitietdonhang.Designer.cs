@@ -69,7 +69,7 @@
             this.Column3,
             this.Column4,
             this.Column5});
-			this.dgvchitietdonhang.Location = new System.Drawing.Point(142, 485);
+			this.dgvchitietdonhang.Location = new System.Drawing.Point(307, 485);
 			this.dgvchitietdonhang.Name = "dgvchitietdonhang";
 			this.dgvchitietdonhang.RowHeadersWidth = 51;
 			this.dgvchitietdonhang.RowTemplate.Height = 24;
@@ -122,7 +122,7 @@
 			this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(423, 69);
+			this.label1.Location = new System.Drawing.Point(588, 69);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(264, 29);
 			this.label1.TabIndex = 54;
@@ -141,7 +141,7 @@
 			this.gbthongtinctdh.Controls.Add(this.label9);
 			this.gbthongtinctdh.Controls.Add(this.label10);
 			this.gbthongtinctdh.Controls.Add(this.label11);
-			this.gbthongtinctdh.Location = new System.Drawing.Point(28, 111);
+			this.gbthongtinctdh.Location = new System.Drawing.Point(193, 111);
 			this.gbthongtinctdh.Name = "gbthongtinctdh";
 			this.gbthongtinctdh.Size = new System.Drawing.Size(1062, 226);
 			this.gbthongtinctdh.TabIndex = 72;
@@ -319,7 +319,7 @@
 			this.gbchucnangctdh.Controls.Add(this.btnsua);
 			this.gbchucnangctdh.Controls.Add(this.btnxoa);
 			this.gbchucnangctdh.Controls.Add(this.txttimkiem);
-			this.gbchucnangctdh.Location = new System.Drawing.Point(178, 348);
+			this.gbchucnangctdh.Location = new System.Drawing.Point(343, 348);
 			this.gbchucnangctdh.Name = "gbchucnangctdh";
 			this.gbchucnangctdh.Size = new System.Drawing.Size(767, 128);
 			this.gbchucnangctdh.TabIndex = 61;
@@ -457,7 +457,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1115, 715);
+			this.ClientSize = new System.Drawing.Size(1445, 715);
 			this.Controls.Add(this.gbchucnangctdh);
 			this.Controls.Add(this.gbthongtinctdh);
 			this.Controls.Add(this.dgvchitietdonhang);

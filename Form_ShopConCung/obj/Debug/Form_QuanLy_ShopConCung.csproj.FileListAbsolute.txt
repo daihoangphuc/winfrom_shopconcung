@@ -102,3 +102,5 @@ E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\rptkhachhang.rdlc
 E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\obj\Debug\Form_ShopConCung.frm_indsnhanvien.resources
 E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\bin\Debug\rptnhanvien.rdlc
 E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\obj\Debug\Form_ShopConCung.frm_slider.resources
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\obj\Debug\Form_ShopConCung.frm_dangnhap.resources
+E:\Form_ShopConCung - Copy (2)\Form_ShopConCung\obj\Debug\Form_ShopConCung.frm_intest.resources

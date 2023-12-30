@@ -58,14 +58,11 @@ namespace Form_ShopConCung
 			else
 			{
 				System.Windows.MessageBox.Show("Vui long dang nhap");
-				// Chuyển về form đăng nhập
-				frm_main formDangNhap = new frm_main();
-				formDangNhap.Show();
-				this.Close();
+				
 			}
 		}
 
-		private void btnnhaplai_Click_1(object sender, EventArgs e)
+		private void btnnhaplai_Click(object sender, EventArgs e)
 		{
 			txtmakh.Clear();
 			txttenkh.Clear();
@@ -76,7 +73,7 @@ namespace Form_ShopConCung
 			txtmakh.Enabled = true;
 		}
 
-		private void btnthem_Click_1(object sender, EventArgs e)
+		private void btnthem_Click(object sender, EventArgs e)
 		{
 			if (txtmakh.Text != "")
 			{
@@ -93,7 +90,7 @@ namespace Form_ShopConCung
 			}
 		}
 
-		private void btnsua_Click_1(object sender, EventArgs e)
+		private void btnsua_Click(object sender, EventArgs e)
 		{
 			if (!string.IsNullOrEmpty(txtmakh.Text))
 			{
@@ -141,7 +138,7 @@ namespace Form_ShopConCung
 		}
 
 
-		private void btnxoa_Click_1(object sender, EventArgs e)
+		private void btnxoa_Click(object sender, EventArgs e)
 		{
 			try
 			{
@@ -157,7 +154,7 @@ namespace Form_ShopConCung
 			}
 		}
 
-		private void btntimkiem_Click_1(object sender, EventArgs e)
+		private void btntimkiem_Click(object sender, EventArgs e)
 		{
 			string keyword = txttimkiem.Text.Trim();
 
@@ -177,7 +174,7 @@ namespace Form_ShopConCung
 			}
 		}
 
-		private void dgvkhachhang_CellClick(object sender, DataGridViewCellEventArgs e)
+		private void dgvkhachhang_CellClick_1(object sender, DataGridViewCellEventArgs e)
 		{
 			donghh = e.RowIndex;
 			// Kiểm tra xem chỉ mục dòng hợp lệ hay không
@@ -211,6 +208,11 @@ namespace Form_ShopConCung
 		}
 
 		private void dgvkhachhang_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+
+		}
+
+		private void groupBox1_Enter(object sender, EventArgs e)
 		{
 
 		}

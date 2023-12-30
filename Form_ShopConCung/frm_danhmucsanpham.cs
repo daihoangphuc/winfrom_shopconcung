@@ -52,10 +52,7 @@ namespace Form_ShopConCung
 			else
 			{
                 System.Windows.MessageBox.Show("Vui long dang nhap");
-				// Chuyển về form đăng nhập
-				frm_main formDangNhap = new frm_main(); 
-				formDangNhap.Show();
-				this.Close();
+				
 			}
 		}
 

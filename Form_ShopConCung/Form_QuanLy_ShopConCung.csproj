@@ -110,6 +110,12 @@
     <Compile Include="frm_chitietdonhang.Designer.cs">
       <DependentUpon>frm_chitietdonhang.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_dangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_dangnhap.Designer.cs">
+      <DependentUpon>frm_dangnhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_danhmucsanpham.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +145,12 @@
     </Compile>
     <Compile Include="frm_indssanpham.Designer.cs">
       <DependentUpon>frm_indssanpham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_intest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_intest.Designer.cs">
+      <DependentUpon>frm_intest.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_khachhang.cs">
       <SubType>Form</SubType>
@@ -202,6 +214,9 @@
     <EmbeddedResource Include="frm_chitietdonhang.resx">
       <DependentUpon>frm_chitietdonhang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_dangnhap.resx">
+      <DependentUpon>frm_dangnhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_danhmucsanpham.resx">
       <DependentUpon>frm_danhmucsanpham.cs</DependentUpon>
     </EmbeddedResource>
@@ -216,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_indssanpham.resx">
       <DependentUpon>frm_indssanpham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_intest.resx">
+      <DependentUpon>frm_intest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_khachhang.resx">
       <DependentUpon>frm_khachhang.cs</DependentUpon>

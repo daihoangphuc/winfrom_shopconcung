@@ -81,7 +81,7 @@
 			this.gbchucnangkh.Controls.Add(this.btnsua);
 			this.gbchucnangkh.Controls.Add(this.btnxoa);
 			this.gbchucnangkh.Controls.Add(this.txttimkiem);
-			this.gbchucnangkh.Location = new System.Drawing.Point(179, 365);
+			this.gbchucnangkh.Location = new System.Drawing.Point(187, 383);
 			this.gbchucnangkh.Name = "gbchucnangkh";
 			this.gbchucnangkh.Size = new System.Drawing.Size(767, 141);
 			this.gbchucnangkh.TabIndex = 68;
@@ -263,7 +263,7 @@
 			this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(418, 66);
+			this.label1.Location = new System.Drawing.Point(426, 84);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(300, 29);
 			this.label1.TabIndex = 65;
@@ -365,7 +365,7 @@
 			this.gbthongtinkh.Controls.Add(this.label4);
 			this.gbthongtinkh.Controls.Add(this.label3);
 			this.gbthongtinkh.Controls.Add(this.label2);
-			this.gbthongtinkh.Location = new System.Drawing.Point(37, 123);
+			this.gbthongtinkh.Location = new System.Drawing.Point(45, 141);
 			this.gbthongtinkh.Name = "gbthongtinkh";
 			this.gbthongtinkh.Size = new System.Drawing.Size(1100, 226);
 			this.gbthongtinkh.TabIndex = 67;
@@ -436,7 +436,7 @@
             this.Column4,
             this.Column5,
             this.MaNhanVien});
-			this.dgvtttaikhoan.Location = new System.Drawing.Point(105, 512);
+			this.dgvtttaikhoan.Location = new System.Drawing.Point(113, 530);
 			this.dgvtttaikhoan.Name = "dgvtttaikhoan";
 			this.dgvtttaikhoan.RowHeadersWidth = 51;
 			this.dgvtttaikhoan.RowTemplate.Height = 24;
@@ -497,7 +497,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1174, 800);
+			this.ClientSize = new System.Drawing.Size(1190, 836);
 			this.Controls.Add(this.gbchucnangkh);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.gbthongtinkh);

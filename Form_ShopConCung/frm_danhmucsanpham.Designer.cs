@@ -33,6 +33,10 @@
 			this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.label1 = new System.Windows.Forms.Label();
 			this.gbthongtindmsp = new System.Windows.Forms.GroupBox();
+			this.txttendanhmuc = new Guna.UI2.WinForms.Guna2TextBox();
+			this.txtmadanhmuc = new Guna.UI2.WinForms.Guna2TextBox();
+			this.label10 = new System.Windows.Forms.Label();
+			this.label11 = new System.Windows.Forms.Label();
 			this.gbchucnangdmsp = new System.Windows.Forms.GroupBox();
 			this.btntimkiem = new Guna.UI2.WinForms.Guna2Button();
 			this.btnnhaplai = new Guna.UI2.WinForms.Guna2Button();
@@ -40,10 +44,6 @@
 			this.btnsua = new Guna.UI2.WinForms.Guna2Button();
 			this.btnxoa = new Guna.UI2.WinForms.Guna2Button();
 			this.txttimkiem = new Guna.UI2.WinForms.Guna2TextBox();
-			this.txttendanhmuc = new Guna.UI2.WinForms.Guna2TextBox();
-			this.txtmadanhmuc = new Guna.UI2.WinForms.Guna2TextBox();
-			this.label10 = new System.Windows.Forms.Label();
-			this.label11 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.dgvdanhmuc)).BeginInit();
 			this.gbthongtindmsp.SuspendLayout();
 			this.gbchucnangdmsp.SuspendLayout();
@@ -57,7 +57,7 @@
 			this.dgvdanhmuc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-			this.dgvdanhmuc.Location = new System.Drawing.Point(253, 391);
+			this.dgvdanhmuc.Location = new System.Drawing.Point(566, 391);
 			this.dgvdanhmuc.Name = "dgvdanhmuc";
 			this.dgvdanhmuc.RowHeadersWidth = 51;
 			this.dgvdanhmuc.RowTemplate.Height = 24;
@@ -86,7 +86,7 @@
 			this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(318, 34);
+			this.label1.Location = new System.Drawing.Point(631, 34);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(350, 29);
 			this.label1.TabIndex = 17;
@@ -99,11 +99,75 @@
 			this.gbthongtindmsp.Controls.Add(this.txtmadanhmuc);
 			this.gbthongtindmsp.Controls.Add(this.label10);
 			this.gbthongtindmsp.Controls.Add(this.label11);
-			this.gbthongtindmsp.Location = new System.Drawing.Point(12, 66);
+			this.gbthongtindmsp.Location = new System.Drawing.Point(325, 66);
 			this.gbthongtindmsp.Name = "gbthongtindmsp";
 			this.gbthongtindmsp.Size = new System.Drawing.Size(954, 174);
 			this.gbthongtindmsp.TabIndex = 74;
 			this.gbthongtindmsp.TabStop = false;
+			// 
+			// txttendanhmuc
+			// 
+			this.txttendanhmuc.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txttendanhmuc.DefaultText = "";
+			this.txttendanhmuc.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.txttendanhmuc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.txttendanhmuc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.txttendanhmuc.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.txttendanhmuc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.txttendanhmuc.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.txttendanhmuc.ForeColor = System.Drawing.Color.Black;
+			this.txttendanhmuc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.txttendanhmuc.Location = new System.Drawing.Point(168, 88);
+			this.txttendanhmuc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.txttendanhmuc.Name = "txttendanhmuc";
+			this.txttendanhmuc.PasswordChar = '\0';
+			this.txttendanhmuc.PlaceholderText = "";
+			this.txttendanhmuc.SelectedText = "";
+			this.txttendanhmuc.Size = new System.Drawing.Size(712, 48);
+			this.txttendanhmuc.TabIndex = 49;
+			// 
+			// txtmadanhmuc
+			// 
+			this.txtmadanhmuc.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtmadanhmuc.DefaultText = "";
+			this.txtmadanhmuc.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.txtmadanhmuc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.txtmadanhmuc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.txtmadanhmuc.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.txtmadanhmuc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.txtmadanhmuc.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.txtmadanhmuc.ForeColor = System.Drawing.Color.Black;
+			this.txtmadanhmuc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.txtmadanhmuc.Location = new System.Drawing.Point(168, 32);
+			this.txtmadanhmuc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.txtmadanhmuc.Name = "txtmadanhmuc";
+			this.txtmadanhmuc.PasswordChar = '\0';
+			this.txtmadanhmuc.PlaceholderText = "";
+			this.txtmadanhmuc.SelectedText = "";
+			this.txtmadanhmuc.Size = new System.Drawing.Size(712, 48);
+			this.txtmadanhmuc.TabIndex = 50;
+			// 
+			// label10
+			// 
+			this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.label10.AutoSize = true;
+			this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label10.Location = new System.Drawing.Point(27, 102);
+			this.label10.Name = "label10";
+			this.label10.Size = new System.Drawing.Size(115, 20);
+			this.label10.TabIndex = 48;
+			this.label10.Text = "Tên danh mục";
+			// 
+			// label11
+			// 
+			this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.label11.AutoSize = true;
+			this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label11.Location = new System.Drawing.Point(27, 47);
+			this.label11.Name = "label11";
+			this.label11.Size = new System.Drawing.Size(110, 20);
+			this.label11.TabIndex = 47;
+			this.label11.Text = "Mã danh mục";
 			// 
 			// gbchucnangdmsp
 			// 
@@ -114,7 +178,7 @@
 			this.gbchucnangdmsp.Controls.Add(this.btnsua);
 			this.gbchucnangdmsp.Controls.Add(this.btnxoa);
 			this.gbchucnangdmsp.Controls.Add(this.txttimkiem);
-			this.gbchucnangdmsp.Location = new System.Drawing.Point(110, 248);
+			this.gbchucnangdmsp.Location = new System.Drawing.Point(423, 248);
 			this.gbchucnangdmsp.Name = "gbchucnangdmsp";
 			this.gbchucnangdmsp.Size = new System.Drawing.Size(767, 128);
 			this.gbchucnangdmsp.TabIndex = 75;
@@ -247,75 +311,11 @@
 			this.txttimkiem.Size = new System.Drawing.Size(605, 48);
 			this.txttimkiem.TabIndex = 59;
 			// 
-			// txttendanhmuc
-			// 
-			this.txttendanhmuc.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txttendanhmuc.DefaultText = "";
-			this.txttendanhmuc.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-			this.txttendanhmuc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-			this.txttendanhmuc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.txttendanhmuc.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.txttendanhmuc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.txttendanhmuc.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.txttendanhmuc.ForeColor = System.Drawing.Color.Black;
-			this.txttendanhmuc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.txttendanhmuc.Location = new System.Drawing.Point(168, 88);
-			this.txttendanhmuc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.txttendanhmuc.Name = "txttendanhmuc";
-			this.txttendanhmuc.PasswordChar = '\0';
-			this.txttendanhmuc.PlaceholderText = "";
-			this.txttendanhmuc.SelectedText = "";
-			this.txttendanhmuc.Size = new System.Drawing.Size(712, 48);
-			this.txttendanhmuc.TabIndex = 49;
-			// 
-			// txtmadanhmuc
-			// 
-			this.txtmadanhmuc.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtmadanhmuc.DefaultText = "";
-			this.txtmadanhmuc.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-			this.txtmadanhmuc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-			this.txtmadanhmuc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.txtmadanhmuc.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.txtmadanhmuc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.txtmadanhmuc.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.txtmadanhmuc.ForeColor = System.Drawing.Color.Black;
-			this.txtmadanhmuc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.txtmadanhmuc.Location = new System.Drawing.Point(168, 32);
-			this.txtmadanhmuc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.txtmadanhmuc.Name = "txtmadanhmuc";
-			this.txtmadanhmuc.PasswordChar = '\0';
-			this.txtmadanhmuc.PlaceholderText = "";
-			this.txtmadanhmuc.SelectedText = "";
-			this.txtmadanhmuc.Size = new System.Drawing.Size(712, 48);
-			this.txtmadanhmuc.TabIndex = 50;
-			// 
-			// label10
-			// 
-			this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.label10.AutoSize = true;
-			this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label10.Location = new System.Drawing.Point(27, 102);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(115, 20);
-			this.label10.TabIndex = 48;
-			this.label10.Text = "Tên danh mục";
-			// 
-			// label11
-			// 
-			this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.label11.AutoSize = true;
-			this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label11.Location = new System.Drawing.Point(27, 47);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(110, 20);
-			this.label11.TabIndex = 47;
-			this.label11.Text = "Mã danh mục";
-			// 
 			// frm_danhmucsanpham
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(978, 676);
+			this.ClientSize = new System.Drawing.Size(1605, 676);
 			this.Controls.Add(this.gbchucnangdmsp);
 			this.Controls.Add(this.gbthongtindmsp);
 			this.Controls.Add(this.dgvdanhmuc);

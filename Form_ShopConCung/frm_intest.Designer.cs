@@ -1,6 +1,6 @@
 ﻿namespace Form_ShopConCung
 {
-	partial class frm_indsnhanvien
+	partial class frm_intest
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -33,22 +33,21 @@
 			// 
 			// reportViewer1
 			// 
-			this.reportViewer1.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.reportViewer1.Location = new System.Drawing.Point(12, 26);
+			this.reportViewer1.Location = new System.Drawing.Point(13, 13);
 			this.reportViewer1.Name = "reportViewer1";
 			this.reportViewer1.ServerReport.BearerToken = null;
-			this.reportViewer1.Size = new System.Drawing.Size(1533, 782);
+			this.reportViewer1.Size = new System.Drawing.Size(1165, 770);
 			this.reportViewer1.TabIndex = 0;
 			// 
-			// frm_indsnhanvien
+			// frm_intest
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1557, 820);
+			this.ClientSize = new System.Drawing.Size(1190, 795);
 			this.Controls.Add(this.reportViewer1);
-			this.Name = "frm_indsnhanvien";
-			this.Text = "frm_indsnhanvien";
-			this.Load += new System.EventHandler(this.frm_indsnhanvien_Load);
+			this.Name = "frm_intest";
+			this.Text = "frm_intest";
+			this.Load += new System.EventHandler(this.frm_intest_Load);
 			this.ResumeLayout(false);
 
 		}

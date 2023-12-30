@@ -109,7 +109,7 @@ namespace Form_ShopConCung
 
 					case "Sản phẩm tồn kho":
 						// Thực hiện thống kê sản phẩm tồn kho
-						DataTable resultTable4 = kn.DocDuLieu("SELECT COUNT(*) AS SanPhamTonKho FROM SanPham WHERE SoLuongTrongKho > 0");
+						DataTable resultTable4 = kn.DocDuLieu("select TenSanPham, (SoLuongTrongKho - SoLuongDaBan) as So_Luong_Ton_Kho from SanPham WHERE SoLuongTrongKho > 0");
 						HienThiKetQua(resultTable4);
 						break;
 

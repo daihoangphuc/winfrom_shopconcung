@@ -33,24 +33,28 @@ namespace Form_ShopConCung
 		public bool isLogin = false;
 		private void frm_slider_Load(object sender, EventArgs e)
 		{
-			menuContainer.Visible = false;
+
+			//menuContainer.Visible = false;
 			pn_sanpham.Visible = false;
 			pn_danhmuc.Visible = false;
 			pn_donhang.Visible = false;
 			pn_khachhang.Visible = false;
 			pn_btndangxuat.Visible = false;
-
-			fhome = new frm_home();
-			fhome.FormClosed += Fmain_FormClosed;
-			fhome.MdiParent = this;
-			fhome.Dock = DockStyle.Fill;
-			fhome.FormBorderStyle = FormBorderStyle.None;
-
-			fhome.ControlBox = false;
-
-			fhome.Show();
 		}
+		private void ShowChildForm(Form childForm)
+		{
+			gbdangnhap.Visible = false;
 
+			childForm.FormClosed += Fmain_FormClosed;
+			childForm.MdiParent = this;
+			childForm.Dock = DockStyle.Fill;
+		
+			childForm.FormBorderStyle = FormBorderStyle.None;
+	
+			childForm.ControlBox = false;
+
+			childForm.Show();
+		}
 
 		bool menuExpand = false;
 		private void menuTransition_Tick(object sender, EventArgs e)
@@ -121,14 +125,7 @@ namespace Form_ShopConCung
 			if (fhome == null)
 			{
 				fhome = new frm_home();
-				fhome.FormClosed += Fmain_FormClosed;
-				fhome.MdiParent = this;
-				fhome.Dock = DockStyle.Fill;
-				fhome.FormBorderStyle = FormBorderStyle.None;
-
-				fhome.ControlBox = false;
-
-				fhome.Show();
+				ShowChildForm(fhome);
 				fhome.BringToFront();
 			}
 			else
@@ -150,13 +147,7 @@ namespace Form_ShopConCung
 			if (findssanpham == null)
 			{
 				findssanpham = new frm_indssanpham();
-				findssanpham.FormClosed += Fsanpham_FormClosed; ;
-				findssanpham.MdiParent = this;
-				findssanpham.Dock = DockStyle.Fill;
-				findssanpham.FormBorderStyle = FormBorderStyle.None;
-
-				findssanpham.ControlBox = false;
-				findssanpham.Show();
+				ShowChildForm(findssanpham);
 			}
 			else
 			{
@@ -171,13 +162,7 @@ namespace Form_ShopConCung
 			if (fsanpham == null)
 			{
 				fsanpham = new frm_sanpham();
-				fsanpham.FormClosed += Fsanpham_FormClosed; ;
-				fsanpham.MdiParent = this;
-				fsanpham.Dock = DockStyle.Fill;
-				fsanpham.FormBorderStyle = FormBorderStyle.None;
-
-				fsanpham.ControlBox = false;
-				fsanpham.Show();
+				ShowChildForm(fsanpham);
 			}
 			else
 			{
@@ -189,6 +174,10 @@ namespace Form_ShopConCung
 		{
 			fsanpham = null;
 		}
+		private void Fdanhmuc_FormClosed(object sender, FormClosedEventArgs e)
+		{
+			fdanhmucsanpham = null;
+		}
 
 		private void btnkhachhang_Click(object sender, EventArgs e)
 		{
@@ -196,15 +185,7 @@ namespace Form_ShopConCung
 			if (fkhachhang == null)
 			{
 				fkhachhang = new frm_khachhang();
-				fkhachhang.FormClosed += Fmain_FormClosed;
-				fkhachhang.MdiParent = this;
-				fkhachhang.Dock = DockStyle.Fill;
-
-				fkhachhang.FormBorderStyle = FormBorderStyle.None;
-
-				fkhachhang.ControlBox = false;
-
-				fkhachhang.Show();
+				ShowChildForm(fkhachhang);
 			}
 			else
 			{
@@ -219,14 +200,7 @@ namespace Form_ShopConCung
 			if (fdanhmucsanpham == null)
 			{
 				fdanhmucsanpham = new frm_danhmucsanpham();
-				fdanhmucsanpham.FormClosed += Fmain_FormClosed;
-				fdanhmucsanpham.MdiParent = this;
-				fdanhmucsanpham.Dock = DockStyle.Fill;
-
-				fdanhmucsanpham.FormBorderStyle = FormBorderStyle.None;
-				fdanhmucsanpham.ControlBox = false;
-
-				fdanhmucsanpham.Show();
+				ShowChildForm(fdanhmucsanpham);
 			}
 			else
 			{
@@ -242,16 +216,7 @@ namespace Form_ShopConCung
 			if (fchitietdonhang == null)
 			{
 				fchitietdonhang = new frm_chitietdonhang();
-				fchitietdonhang.FormClosed += Fmain_FormClosed;
-				fchitietdonhang.MdiParent = this;
-				fchitietdonhang.Dock = DockStyle.Fill;
-
-				fchitietdonhang.FormBorderStyle = FormBorderStyle.None;
-
-
-				fchitietdonhang.ControlBox = false;
-
-				fchitietdonhang.Show();
+				ShowChildForm(fchitietdonhang);
 			}
 			else
 			{
@@ -268,13 +233,7 @@ namespace Form_ShopConCung
 			if (findsnhanvien == null)
 			{
 				findsnhanvien = new frm_indsnhanvien();
-				findsnhanvien.FormClosed += Fsanpham_FormClosed; ;
-				findsnhanvien.MdiParent = this;
-				findsnhanvien.Dock = DockStyle.Fill;
-				findsnhanvien.FormBorderStyle = FormBorderStyle.None;
-
-				findsnhanvien.ControlBox = false;
-				findsnhanvien.Show();
+				ShowChildForm(findsnhanvien);
 			}
 			else
 			{
@@ -286,18 +245,11 @@ namespace Form_ShopConCung
 		private void inkhachhang_Click(object sender, EventArgs e)
 		{
 			//In ds khach hang
-			
 			gbdangnhap.Visible = false;
 			if (findskhachhang == null)
 			{
 				findskhachhang = new frm_indskhachhang();
-				findskhachhang.FormClosed += Fsanpham_FormClosed; ;
-				findskhachhang.MdiParent = this;
-				findskhachhang.Dock = DockStyle.Fill;
-				findskhachhang.FormBorderStyle = FormBorderStyle.None;
-
-				findskhachhang.ControlBox = false;
-				findskhachhang.Show();
+				ShowChildForm(findskhachhang);
 			}
 			else
 			{
@@ -305,7 +257,96 @@ namespace Form_ShopConCung
 			}
 		}
 
-		private void btndangnhap_Click(object sender, EventArgs e)
+
+		bool tkExpand = false;
+		private void taikhoanTransition_Tick(object sender, EventArgs e)
+		{
+			if (tkExpand == false)
+			{
+				tkContainer.Height += 10;
+				if (tkContainer.Height >= 124)
+				{
+					taikhoanTransition.Stop();
+					tkExpand = true;
+				}
+			}
+			else
+			{
+				tkContainer.Height -= 10;
+				if (tkContainer.Height <= 62)
+				{
+					taikhoanTransition.Stop();
+					tkExpand = false;
+				}
+			}
+		}
+
+		private void btn_tk_Click(object sender, EventArgs e)
+		{
+			taikhoanTransition.Start();
+		}
+
+		private void btndangnhap_slider_Click(object sender, EventArgs e)
+		{
+			//dangnhap
+			fhome = new frm_home();
+			ShowChildForm(fhome);
+		}
+
+		private void button7_Click(object sender, EventArgs e)
+		{
+			btndanhmuc.Visible = false;
+			btnkhachhang.Visible = false;
+			btndonhang.Visible = false;
+			menu.Visible = false;
+			btnsanpham.Visible = false;
+			// Hiển thị thông báo đăng xuất
+			MessageBox.Show("Đăng xuất thành công", "Thông báo");
+			// Xóa dữ liệu tài khoản đã nhập
+			txttaikhoan.Clear();
+			txtmatkhau.Clear();
+
+			Application.Restart();
+		}
+
+		private void btn_thoat_Click(object sender, EventArgs e)
+		{
+
+			DialogResult result = MessageBox.Show("Bạn có chắc muốn thoát?", "Xác nhận thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+			// Kiểm tra kết quả của hộp thoại xác nhận
+			if (result == DialogResult.Yes)
+			{
+				Application.Exit();
+			}
+		}
+		public static string GenerateRandomString(int length)
+		{
+			const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+			Random random = new Random();
+
+			string randomString = new string(Enumerable.Repeat(chars, length)
+				.Select(s => s[random.Next(s.Length)]).ToArray());
+
+			return randomString;
+		}
+
+		private void gbdangnhap_Enter(object sender, EventArgs e)
+		{
+
+		}
+
+		private void button8_MouseEnter(object sender, EventArgs e)
+		{
+			button8.BackColor = Color.DeepPink;
+		}
+
+		private void button8_MouseLeave(object sender, EventArgs e)
+		{
+			button8.BackColor = SystemColors.ActiveCaptionText;
+		}
+
+		private void btndangnhap_Click_1(object sender, EventArgs e)
 		{
 			KetNoiDuLieu ketnoi = new KetNoiDuLieu();
 			DataTable bangtam = new DataTable();
@@ -354,99 +395,19 @@ namespace Form_ShopConCung
 					pn_btndangxuat.Visible = true;
 					pn_btdangnhap.Visible = false;
 				}
-				
+
 			}
 			else
 			{
 				MessageBox.Show("Đăng nhập không thành công", "Thông báo");
 				txttaikhoan.Clear();
 				txtmatkhau.Clear();
-				
-			
+
+
 			}
 		}
 
-		bool tkExpand = false;
-		private void taikhoanTransition_Tick(object sender, EventArgs e)
-		{
-			if (tkExpand == false)
-			{
-				tkContainer.Height += 10;
-				if (tkContainer.Height >= 124)
-				{
-					taikhoanTransition.Stop();
-					tkExpand = true;
-				}
-			}
-			else
-			{
-				tkContainer.Height -= 10;
-				if (tkContainer.Height <= 62)
-				{
-					taikhoanTransition.Stop();
-					tkExpand = false;
-				}
-			}
-		}
-
-		private void btn_tk_Click(object sender, EventArgs e)
-		{
-			taikhoanTransition.Start();
-		}
-
-		private void btndangnhap_slider_Click(object sender, EventArgs e)
-		{
-			//dangnhap
-			fhome = new frm_home();
-
-			fhome.FormClosed += Fmain_FormClosed;
-			fhome.MdiParent = this;
-			fhome.Dock = DockStyle.Fill;
-			fhome.FormBorderStyle = FormBorderStyle.None;
-
-			fhome.ControlBox = false;
-
-			fhome.Show();
-		}
-
-		private void button7_Click(object sender, EventArgs e)
-		{
-			btndanhmuc.Visible = false;
-			btnkhachhang.Visible = false;
-			btndonhang.Visible = false;
-			menu.Visible = false;
-			btnsanpham.Visible = false;
-			// Hiển thị thông báo đăng xuất
-			MessageBox.Show("Đăng xuất thành công", "Thông báo");
-			// Xóa dữ liệu tài khoản đã nhập
-			txttaikhoan.Clear();
-			txtmatkhau.Clear();
-
-			Application.Restart();
-		}
-
-		private void btn_thoat_Click(object sender, EventArgs e)
-		{
-
-			DialogResult result = MessageBox.Show("Bạn có chắc muốn thoát?", "Xác nhận thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-			// Kiểm tra kết quả của hộp thoại xác nhận
-			if (result == DialogResult.Yes)
-			{
-				Application.Exit();
-			}
-		}
-		public static string GenerateRandomString(int length)
-		{
-			const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-			Random random = new Random();
-
-			string randomString = new string(Enumerable.Repeat(chars, length)
-				.Select(s => s[random.Next(s.Length)]).ToArray());
-
-			return randomString;
-		}
-		private void btndangki_Click(object sender, EventArgs e)
+		private void btndangki_Click_1(object sender, EventArgs e)
 		{
 			// Kiểm tra thông tin đăng kí
 			if (string.IsNullOrEmpty(txttaikhoan.Text) || string.IsNullOrEmpty(txtmatkhau.Text))
@@ -494,21 +455,6 @@ namespace Form_ShopConCung
 			txttaikhoan.Clear();
 			txtmatkhau.Clear();
 			//tabControl1.SelectedTab = tabDangNhap; // Chọn tab đăng nhập
-		}
-
-		private void gbdangnhap_Enter(object sender, EventArgs e)
-		{
-
-		}
-
-		private void button8_MouseEnter(object sender, EventArgs e)
-		{
-			button8.BackColor = Color.DeepPink;
-		}
-
-		private void button8_MouseLeave(object sender, EventArgs e)
-		{
-			button8.BackColor = SystemColors.ActiveCaptionText;
 		}
 	}
 }

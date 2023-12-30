@@ -66,6 +66,7 @@
 			this.btn_thoat = new System.Windows.Forms.Button();
 			this.slideTrasition = new System.Windows.Forms.Timer(this.components);
 			this.gbdangnhap = new System.Windows.Forms.GroupBox();
+			this.taikhoanTransition = new System.Windows.Forms.Timer(this.components);
 			this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
 			this.label1 = new System.Windows.Forms.Label();
 			this.txtmatkhau = new Guna.UI2.WinForms.Guna2TextBox();
@@ -74,7 +75,6 @@
 			this.txttaikhoan = new Guna.UI2.WinForms.Guna2TextBox();
 			this.btndangki = new Guna.UI2.WinForms.Guna2Button();
 			this.label3 = new System.Windows.Forms.Label();
-			this.taikhoanTransition = new System.Windows.Forms.Timer(this.components);
 			this.menuContainer.SuspendLayout();
 			this.panel5.SuspendLayout();
 			this.pn5.SuspendLayout();
@@ -536,12 +536,12 @@
 			this.btn_thoat.ForeColor = System.Drawing.Color.Snow;
 			this.btn_thoat.Image = global::Form_ShopConCung.Properties.Resources.exit;
 			this.btn_thoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btn_thoat.Location = new System.Drawing.Point(-12, -17);
+			this.btn_thoat.Location = new System.Drawing.Point(-7, -17);
 			this.btn_thoat.Name = "btn_thoat";
 			this.btn_thoat.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
 			this.btn_thoat.Size = new System.Drawing.Size(276, 98);
 			this.btn_thoat.TabIndex = 1;
-			this.btn_thoat.Text = "          Thoát";
+			this.btn_thoat.Text = "         Thoát";
 			this.btn_thoat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btn_thoat.UseVisualStyleBackColor = false;
 			this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
@@ -553,7 +553,9 @@
 			// 
 			// gbdangnhap
 			// 
-			this.gbdangnhap.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.gbdangnhap.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.gbdangnhap.Controls.Add(this.guna2ImageButton1);
 			this.gbdangnhap.Controls.Add(this.label1);
 			this.gbdangnhap.Controls.Add(this.txtmatkhau);
@@ -562,12 +564,17 @@
 			this.gbdangnhap.Controls.Add(this.txttaikhoan);
 			this.gbdangnhap.Controls.Add(this.btndangki);
 			this.gbdangnhap.Controls.Add(this.label3);
-			this.gbdangnhap.Location = new System.Drawing.Point(0, 130);
+			this.gbdangnhap.Location = new System.Drawing.Point(0, 133);
 			this.gbdangnhap.Name = "gbdangnhap";
-			this.gbdangnhap.Size = new System.Drawing.Size(1198, 597);
+			this.gbdangnhap.Size = new System.Drawing.Size(1201, 594);
 			this.gbdangnhap.TabIndex = 74;
 			this.gbdangnhap.TabStop = false;
 			this.gbdangnhap.Enter += new System.EventHandler(this.gbdangnhap_Enter);
+			// 
+			// taikhoanTransition
+			// 
+			this.taikhoanTransition.Interval = 10;
+			this.taikhoanTransition.Tick += new System.EventHandler(this.taikhoanTransition_Tick);
 			// 
 			// guna2ImageButton1
 			// 
@@ -578,11 +585,11 @@
 			this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
 			this.guna2ImageButton1.ImageRotate = 0F;
 			this.guna2ImageButton1.ImageSize = new System.Drawing.Size(200, 119);
-			this.guna2ImageButton1.Location = new System.Drawing.Point(501, 146);
+			this.guna2ImageButton1.Location = new System.Drawing.Point(636, 167);
 			this.guna2ImageButton1.Name = "guna2ImageButton1";
 			this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(199, 118);
 			this.guna2ImageButton1.Size = new System.Drawing.Size(200, 140);
-			this.guna2ImageButton1.TabIndex = 86;
+			this.guna2ImageButton1.TabIndex = 102;
 			// 
 			// label1
 			// 
@@ -590,10 +597,10 @@
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(88)))), ((int)(((byte)(127)))));
-			this.label1.Location = new System.Drawing.Point(389, 94);
+			this.label1.Location = new System.Drawing.Point(524, 115);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(450, 49);
-			this.label1.TabIndex = 85;
+			this.label1.TabIndex = 101;
 			this.label1.Text = "Đăng nhập hệ thống";
 			// 
 			// txtmatkhau
@@ -609,25 +616,25 @@
 			this.txtmatkhau.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.txtmatkhau.ForeColor = System.Drawing.Color.Black;
 			this.txtmatkhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.txtmatkhau.Location = new System.Drawing.Point(456, 334);
+			this.txtmatkhau.Location = new System.Drawing.Point(591, 355);
 			this.txtmatkhau.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.txtmatkhau.Name = "txtmatkhau";
 			this.txtmatkhau.PasswordChar = '*';
 			this.txtmatkhau.PlaceholderText = "";
 			this.txtmatkhau.SelectedText = "";
 			this.txtmatkhau.Size = new System.Drawing.Size(431, 38);
-			this.txtmatkhau.TabIndex = 84;
+			this.txtmatkhau.TabIndex = 100;
 			// 
 			// label4
 			// 
 			this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.label4.AutoSize = true;
 			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.Location = new System.Drawing.Point(310, 293);
+			this.label4.Location = new System.Drawing.Point(445, 314);
 			this.label4.Margin = new System.Windows.Forms.Padding(15);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(81, 20);
-			this.label4.TabIndex = 81;
+			this.label4.TabIndex = 97;
 			this.label4.Text = "Tài khoản";
 			// 
 			// btndangnhap
@@ -644,13 +651,13 @@
 			this.btndangnhap.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
 			this.btndangnhap.ForeColor = System.Drawing.Color.Black;
 			this.btndangnhap.Image = global::Form_ShopConCung.Properties.Resources.login;
-			this.btndangnhap.Location = new System.Drawing.Point(733, 380);
+			this.btndangnhap.Location = new System.Drawing.Point(868, 401);
 			this.btndangnhap.Name = "btndangnhap";
 			this.btndangnhap.Size = new System.Drawing.Size(156, 45);
-			this.btndangnhap.TabIndex = 79;
+			this.btndangnhap.TabIndex = 95;
 			this.btndangnhap.Text = "Đăng nhập";
 			this.btndangnhap.UseTransparentBackground = true;
-			this.btndangnhap.Click += new System.EventHandler(this.btndangnhap_Click);
+			this.btndangnhap.Click += new System.EventHandler(this.btndangnhap_Click_1);
 			// 
 			// txttaikhoan
 			// 
@@ -665,14 +672,14 @@
 			this.txttaikhoan.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.txttaikhoan.ForeColor = System.Drawing.Color.Black;
 			this.txttaikhoan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.txttaikhoan.Location = new System.Drawing.Point(456, 288);
+			this.txttaikhoan.Location = new System.Drawing.Point(591, 309);
 			this.txttaikhoan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.txttaikhoan.Name = "txttaikhoan";
 			this.txttaikhoan.PasswordChar = '\0';
 			this.txttaikhoan.PlaceholderText = "";
 			this.txttaikhoan.SelectedText = "";
 			this.txttaikhoan.Size = new System.Drawing.Size(431, 38);
-			this.txttaikhoan.TabIndex = 83;
+			this.txttaikhoan.TabIndex = 99;
 			// 
 			// btndangki
 			// 
@@ -689,30 +696,25 @@
 			this.btndangki.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
 			this.btndangki.ForeColor = System.Drawing.Color.Black;
 			this.btndangki.Image = global::Form_ShopConCung.Properties.Resources.register;
-			this.btndangki.Location = new System.Drawing.Point(458, 380);
+			this.btndangki.Location = new System.Drawing.Point(593, 401);
 			this.btndangki.Name = "btndangki";
 			this.btndangki.Size = new System.Drawing.Size(156, 45);
-			this.btndangki.TabIndex = 80;
+			this.btndangki.TabIndex = 96;
 			this.btndangki.Text = "Đăng kí";
 			this.btndangki.UseTransparentBackground = true;
-			this.btndangki.Click += new System.EventHandler(this.btndangki_Click);
+			this.btndangki.Click += new System.EventHandler(this.btndangki_Click_1);
 			// 
 			// label3
 			// 
 			this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.label3.AutoSize = true;
 			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(310, 339);
+			this.label3.Location = new System.Drawing.Point(445, 360);
 			this.label3.Margin = new System.Windows.Forms.Padding(15);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(77, 20);
-			this.label3.TabIndex = 82;
+			this.label3.TabIndex = 98;
 			this.label3.Text = "Mật khẩu";
-			// 
-			// taikhoanTransition
-			// 
-			this.taikhoanTransition.Interval = 10;
-			this.taikhoanTransition.Tick += new System.EventHandler(this.taikhoanTransition_Tick);
 			// 
 			// frm_slider
 			// 
@@ -780,14 +782,6 @@
 		private System.Windows.Forms.Button inkhachhang;
 		private System.Windows.Forms.Panel panel3;
 		private System.Windows.Forms.GroupBox gbdangnhap;
-		private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
-		private System.Windows.Forms.Label label1;
-		private Guna.UI2.WinForms.Guna2TextBox txtmatkhau;
-		private System.Windows.Forms.Label label4;
-		private Guna.UI2.WinForms.Guna2Button btndangnhap;
-		private Guna.UI2.WinForms.Guna2TextBox txttaikhoan;
-		private Guna.UI2.WinForms.Guna2Button btndangki;
-		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.FlowLayoutPanel tkContainer;
 		private System.Windows.Forms.Panel panel11;
 		private System.Windows.Forms.Button btn_tk;
@@ -798,5 +792,13 @@
 		private System.Windows.Forms.Timer taikhoanTransition;
 		private System.Windows.Forms.Panel pn_thoat;
 		private System.Windows.Forms.Button btn_thoat;
+		private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
+		private System.Windows.Forms.Label label1;
+		private Guna.UI2.WinForms.Guna2TextBox txtmatkhau;
+		private System.Windows.Forms.Label label4;
+		private Guna.UI2.WinForms.Guna2Button btndangnhap;
+		private Guna.UI2.WinForms.Guna2TextBox txttaikhoan;
+		private Guna.UI2.WinForms.Guna2Button btndangki;
+		private System.Windows.Forms.Label label3;
 	}
 }
