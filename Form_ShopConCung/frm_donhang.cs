@@ -30,27 +30,20 @@ namespace Form_ShopConCung
 		}
 		private void frm_donhang_Load(object sender, EventArgs e)
 		{
-			if (PhanquyenQuanli.loaitk == "admin")
-			{
-				HienThiDuLieu();
-			}
-			else if (PhanquyenQuanli.loaitk == "staff")
+			HienThiDuLieu();
+			if (PhanquyenQuanli.loaitk == "staff")
 			{
 				btnxoa.Enabled = false;
-				HienThiDuLieu();
+			}
+			else if (PhanquyenQuanli.loaitk == "admin")
+			{
 
 			}
-			else if (PhanquyenQuanli.loaitk == "user")
+			else
 			{
 				btnthem.Enabled = false;
 				btnsua.Enabled = false;
 				btnxoa.Enabled = false;
-				HienThiDuLieu();
-			}
-			else
-			{
-				System.Windows.MessageBox.Show("Vui long dang nhap");
-			
 			}
 		}
 

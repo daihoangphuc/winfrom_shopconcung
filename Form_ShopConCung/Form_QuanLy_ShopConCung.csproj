@@ -104,6 +104,7 @@
     <Compile Include="ChiTietDonHang.cs" />
     <Compile Include="DanhMucSanPham.cs" />
     <Compile Include="DonHang.cs" />
+    <Compile Include="Donhang_report.cs" />
     <Compile Include="frm_chitietdonhang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -275,10 +276,14 @@
     <EmbeddedResource Include="rptsanpham.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="rpt_intest.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="SANPHAM.resx">
       <DependentUpon>SANPHAM.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Donhang_report.datasource" />
     <None Include="Properties\DataSources\Khachhang_Report.datasource" />
     <None Include="Properties\DataSources\Nhanvien_report.datasource" />
     <None Include="Properties\DataSources\object_sanpham_report.datasource" />
@@ -397,6 +402,9 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

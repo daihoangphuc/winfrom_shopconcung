@@ -386,6 +386,7 @@
 			this.gbthongtinkh.Size = new System.Drawing.Size(1100, 226);
 			this.gbthongtinkh.TabIndex = 63;
 			this.gbthongtinkh.TabStop = false;
+			this.gbthongtinkh.Enter += new System.EventHandler(this.gbthongtinkh_Enter);
 			// 
 			// dgvnhanvien
 			// 

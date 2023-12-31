@@ -33,7 +33,7 @@
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
 			this.cmbmadanhmuc = new Guna.UI2.WinForms.Guna2ComboBox();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.imagesanpham = new System.Windows.Forms.PictureBox();
 			this.txthinhanh = new Guna.UI2.WinForms.Guna2TextBox();
 			this.txtsldaban = new Guna.UI2.WinForms.Guna2TextBox();
 			this.txtsltrongkho = new Guna.UI2.WinForms.Guna2TextBox();
@@ -70,7 +70,7 @@
 			this.dgvthongke = new System.Windows.Forms.DataGridView();
 			this.groupBox1.SuspendLayout();
 			this.groupBox3.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.imagesanpham)).BeginInit();
 			this.flowLayoutPanel1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.gbsearch.SuspendLayout();
@@ -93,7 +93,7 @@
 			// groupBox3
 			// 
 			this.groupBox3.Controls.Add(this.cmbmadanhmuc);
-			this.groupBox3.Controls.Add(this.pictureBox1);
+			this.groupBox3.Controls.Add(this.imagesanpham);
 			this.groupBox3.Controls.Add(this.txthinhanh);
 			this.groupBox3.Controls.Add(this.txtsldaban);
 			this.groupBox3.Controls.Add(this.txtsltrongkho);
@@ -141,16 +141,17 @@
 			this.cmbmadanhmuc.Size = new System.Drawing.Size(337, 36);
 			this.cmbmadanhmuc.TabIndex = 70;
 			// 
-			// pictureBox1
+			// imagesanpham
 			// 
-			this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(834, 84);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(171, 152);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox1.TabIndex = 69;
-			this.pictureBox1.TabStop = false;
+			this.imagesanpham.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.imagesanpham.Image = ((System.Drawing.Image)(resources.GetObject("imagesanpham.Image")));
+			this.imagesanpham.Location = new System.Drawing.Point(834, 84);
+			this.imagesanpham.Name = "imagesanpham";
+			this.imagesanpham.Size = new System.Drawing.Size(171, 152);
+			this.imagesanpham.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.imagesanpham.TabIndex = 69;
+			this.imagesanpham.TabStop = false;
+			this.imagesanpham.Click += new System.EventHandler(this.pictureBox1_Click_1);
 			// 
 			// txthinhanh
 			// 
@@ -723,7 +724,7 @@
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox3.ResumeLayout(false);
 			this.groupBox3.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.imagesanpham)).EndInit();
 			this.flowLayoutPanel1.ResumeLayout(false);
 			this.groupBox2.ResumeLayout(false);
 			this.gbsearch.ResumeLayout(false);
@@ -757,7 +758,7 @@
 		private System.Windows.Forms.GroupBox gbsearch;
 		private System.Windows.Forms.GroupBox groupBox2;
 		private System.Windows.Forms.GroupBox groupBox3;
-		private System.Windows.Forms.PictureBox pictureBox1;
+		private System.Windows.Forms.PictureBox imagesanpham;
 		private Guna.UI2.WinForms.Guna2TextBox txthinhanh;
 		private Guna.UI2.WinForms.Guna2TextBox txtsldaban;
 		private Guna.UI2.WinForms.Guna2TextBox txtsltrongkho;

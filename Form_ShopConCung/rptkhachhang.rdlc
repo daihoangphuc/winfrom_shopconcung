@@ -6,19 +6,19 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.54999in</Width>
+              <Width>1.09166in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.99166in</Width>
+              <Width>1.76666in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.01667in</Width>
+              <Width>0.7in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>5.08836in</Width>
+              <Width>3.15503in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.93333in</Width>
+              <Width>1.19166in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -35,11 +35,14 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Ma Khach Hang</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>times New Roman</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Left</TextAlign>
+                            <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -68,11 +71,14 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Ho Ten</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>times New Roman</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Left</TextAlign>
+                            <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -101,11 +107,14 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Gioi Tinh</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>times New Roman</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Left</TextAlign>
+                            <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -134,11 +143,14 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Dia Chi</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>times New Roman</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Left</TextAlign>
+                            <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -167,11 +179,14 @@
                           <TextRuns>
                             <TextRun>
                               <Value>SDT</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>times New Roman</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Left</TextAlign>
+                            <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -205,11 +220,13 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!MaKhachHang.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>times New Roman</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Left</TextAlign>
+                            <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -238,11 +255,13 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!HoTen.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>times New Roman</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Left</TextAlign>
+                            <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -271,11 +290,13 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!GioiTinh.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>times New Roman</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Left</TextAlign>
+                            <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -304,11 +325,13 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!DiaChi.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>times New Roman</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Left</TextAlign>
+                            <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -337,11 +360,13 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!SDT.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>times New Roman</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Left</TextAlign>
+                            <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -386,7 +411,7 @@
         <DataSetName>KhachhangDataset</DataSetName>
         <Top>0.305in</Top>
         <Height>0.5in</Height>
-        <Width>10.58001in</Width>
+        <Width>7.90501in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -401,7 +426,7 @@
       </Border>
     </Style>
   </Body>
-  <Width>10.58001in</Width>
+  <Width>7.90501in</Width>
   <Page>
     <PageHeader>
       <Height>1in</Height>
@@ -423,12 +448,14 @@
                   </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox1</rd:DefaultName>
           <Top>0.355in</Top>
-          <Left>2.92499in</Left>
+          <Left>2.03332in</Left>
           <Height>0.38333in</Height>
           <Width>4.11667in</Width>
           <Style>

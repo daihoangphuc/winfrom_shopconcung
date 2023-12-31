@@ -18,7 +18,6 @@ namespace Form_ShopConCung
 		{
 			InitializeComponent();
 		}
-		//khai bao doi tuong
 		KetNoiDuLieu ketnoi = new KetNoiDuLieu();
 		SqlDataAdapter bodocghi;
 		DataTable bangkh = new DataTable();
@@ -28,37 +27,24 @@ namespace Form_ShopConCung
 			string sql = "select * from KhachHang";
 			bangkh = ketnoi.DocDuLieu(sql);
 			bodocghi = ketnoi.docghi;
-			dgvkhachhang.DataSource = bangkh;
+			dgvkh.DataSource = bangkh;
 		}
-		private void label1_Click(object sender, EventArgs e)
-		{
-
-		}
-
 		private void frm_khachhang_Load(object sender, EventArgs e)
 		{
-			cmbgioitinh.SelectedIndex = 0;
-			if (PhanquyenQuanli.loaitk == "admin")
-			{
-				HienThiDuLieu();
-			}
-			else if (PhanquyenQuanli.loaitk == "staff")
+			HienThiDuLieu();
+			if(PhanquyenQuanli.loaitk == "staff")
 			{
 				btnxoa.Enabled = false;
-				HienThiDuLieu();
+			}
+			else if(PhanquyenQuanli.loaitk == "admin")
+			{
 
 			}
-			else if (PhanquyenQuanli.loaitk == "user")
+			else
 			{
 				btnthem.Enabled = false;
 				btnsua.Enabled = false;
 				btnxoa.Enabled = false;
-				HienThiDuLieu();
-			}
-			else
-			{
-				System.Windows.MessageBox.Show("Vui long dang nhap");
-				
 			}
 		}
 
@@ -89,29 +75,6 @@ namespace Form_ShopConCung
 				HienThiDuLieu();
 			}
 		}
-
-		private void btnsua_Click(object sender, EventArgs e)
-		{
-			if (!string.IsNullOrEmpty(txtmakh.Text))
-			{
-				string idKhachHang = txtmakh.Text; ; // Giả sử cột IDKhachHang
-				string tenKhachHang = txttenkh.Text;
-				string gioiTinh = cmbgioitinh.Text;
-				string diaChi = txtdiachi.Text;
-				string soDienThoai = txtsdtkh.Text;
-
-				// Sử dụng lệnh UPDATE
-				UpdateKhachHang(idKhachHang, tenKhachHang, gioiTinh, diaChi, soDienThoai);
-
-				bangkh.Clear();
-				HienThiDuLieu();
-			}
-			else
-			{
-				MessageBox.Show("Hãy nhập thông tin khách hàng");
-			}
-		}
-
 		private void UpdateKhachHang(string idKhachHang, string tenKhachHang, string gioiTinh, string diaChi, string soDienThoai)
 		{
 			string ConnectionString = "Data Source=LAPTOP-4CEU6S6B\\SQLEXPRESS;Initial Catalog=frm_QuanLy_ShopConCung2;Integrated Security=True";
@@ -136,7 +99,27 @@ namespace Form_ShopConCung
 				}
 			}
 		}
+		private void btnsua_Click(object sender, EventArgs e)
+		{
+			if (!string.IsNullOrEmpty(txtmakh.Text))
+			{
+				string idKhachHang = txtmakh.Text; ; // Giả sử cột IDKhachHang
+				string tenKhachHang = txttenkh.Text;
+				string gioiTinh = cmbgioitinh.Text;
+				string diaChi = txtdiachi.Text;
+				string soDienThoai = txtsdtkh.Text;
 
+				// Sử dụng lệnh UPDATE
+				UpdateKhachHang(idKhachHang, tenKhachHang, gioiTinh, diaChi, soDienThoai);
+
+				bangkh.Clear();
+				HienThiDuLieu();
+			}
+			else
+			{
+				MessageBox.Show("Hãy nhập thông tin khách hàng");
+			}
+		}
 
 		private void btnxoa_Click(object sender, EventArgs e)
 		{
@@ -165,7 +148,7 @@ namespace Form_ShopConCung
 				dv.RowFilter = $"MaKhachHang LIKE '%{keyword}%' OR Hoten LIKE '%{keyword}%' ";
 
 				// Hiển thị kết quả lọc lên DataGridView
-				dgvkhachhang.DataSource = dv.ToTable();
+				dgvkh.DataSource = dv.ToTable();
 			}
 			else
 			{
@@ -174,14 +157,14 @@ namespace Form_ShopConCung
 			}
 		}
 
-		private void dgvkhachhang_CellClick_1(object sender, DataGridViewCellEventArgs e)
+		private void dgvkh_CellClick(object sender, DataGridViewCellEventArgs e)
 		{
 			donghh = e.RowIndex;
 			// Kiểm tra xem chỉ mục dòng hợp lệ hay không
 			if (donghh >= 0)
 			{
 				// Truy cập dòng được chọn từ DataGridView bằng chỉ mục dòng từ sự kiện CellClick
-				DataGridViewRow selectedRow = dgvkhachhang.Rows[e.RowIndex];
+				DataGridViewRow selectedRow = dgvkh.Rows[e.RowIndex];
 
 				// Lấy giá trị từ ô cụ thể trong dòng và hiển thị lên các TextBox tương ứng
 				txtmakh.Text = selectedRow.Cells[0].Value?.ToString();
@@ -197,17 +180,7 @@ namespace Form_ShopConCung
 			}
 		}
 
-		private void cmbgioitinh_SelectedIndexChanged(object sender, EventArgs e)
-		{
-
-		}
-
-		private void gbthongtinkh_Enter(object sender, EventArgs e)
-		{
-
-		}
-
-		private void dgvkhachhang_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		private void groupBox3_Enter(object sender, EventArgs e)
 		{
 
 		}

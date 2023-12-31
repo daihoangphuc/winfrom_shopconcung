@@ -25,6 +25,7 @@ namespace Form_ShopConCung
 		frm_indskhachhang findskhachhang;
 		frm_indssanpham findssanpham;
 
+		frm_intest fintest;
 		public frm_slider()
 		{
 			InitializeComponent();
@@ -40,6 +41,7 @@ namespace Form_ShopConCung
 			pn_donhang.Visible = false;
 			pn_khachhang.Visible = false;
 			pn_btndangxuat.Visible = false;
+		
 		}
 		private void ShowChildForm(Form childForm)
 		{
@@ -122,15 +124,15 @@ namespace Form_ShopConCung
 		{
 			//home
 
-			if (fhome == null)
+			if (fmain == null)
 			{
-				fhome = new frm_home();
-				ShowChildForm(fhome);
-				fhome.BringToFront();
+				fmain = new frm_main();
+				ShowChildForm(fmain);
+				fmain.BringToFront();
 			}
 			else
 			{
-				fhome.Activate();
+				fmain.Activate();
 			}
 		}
 

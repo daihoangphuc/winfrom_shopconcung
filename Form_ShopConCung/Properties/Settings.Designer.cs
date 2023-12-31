@@ -33,5 +33,16 @@ namespace Form_ShopConCung.Properties {
                 return ((string)(this["frm_QuanLy_ShopConCungConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-4CEU6S6B\\SQLEXPRESS;Initial Catalog=frm_QuanLy_ShopConCung2;In" +
+            "tegrated Security=True")]
+        public string frm_QuanLy_ShopConCung2ConnectionString {
+            get {
+                return ((string)(this["frm_QuanLy_ShopConCung2ConnectionString"]));
+            }
+        }
     }
 }

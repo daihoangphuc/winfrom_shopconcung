@@ -155,18 +155,20 @@ namespace Form_ShopConCung
 			if (bangtam.Rows.Count > 0)
 			{
 				MessageBox.Show("Dang nhap thanh cong", "Thong bao");
-
-		
-
-
 				đăngXuấtToolStripMenuItem.Enabled = true;
-				if (bangtam.Rows[0]["quyen"].ToString() == "" || int.Parse(bangtam.Rows[0]["quyen"].ToString()) == 0)
+				if (bangtam.Rows[0]["quyen"].ToString() == "")
 				{
+					PhanquyenQuanli.loaitk = "user";
+				}
+				else if(int.Parse(bangtam.Rows[0]["quyen"].ToString()) == 0)
+				{
+					PhanquyenQuanli.loaitk = "staff";
+					chứcNăngToolStripMenuItem.Enabled = true;
 					inHóaĐơnToolStripMenuItem.Enabled = true;
-
 				}
 				else
 				{
+					PhanquyenQuanli.loaitk = "admin";
 					chứcNăngToolStripMenuItem.Enabled = true;
 					inHóaĐơnToolStripMenuItem.Enabled = true;
 				}

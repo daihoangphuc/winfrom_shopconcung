@@ -104,6 +104,7 @@
 			this.gbthongtindmsp.Size = new System.Drawing.Size(954, 174);
 			this.gbthongtindmsp.TabIndex = 74;
 			this.gbthongtindmsp.TabStop = false;
+			this.gbthongtindmsp.Enter += new System.EventHandler(this.gbthongtindmsp_Enter);
 			// 
 			// txttendanhmuc
 			// 

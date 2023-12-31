@@ -56,27 +56,20 @@ namespace Form_ShopConCung
 			// Thêm sự kiện KeyPress cho TextBox txttimkiem
 			txttimkiem.KeyPress += new KeyPressEventHandler(txttimkiem_KeyPress);
 			HienDanhMuc();
-			if (PhanquyenQuanli.loaitk == "admin")
-			{
-				HienThiDuLieu();
-			}
-			else if (PhanquyenQuanli.loaitk == "staff")
+			HienThiDuLieu();
+			if (PhanquyenQuanli.loaitk == "staff")
 			{
 				btnxoa.Enabled = false;
-				HienThiDuLieu();
+			}
+			else if (PhanquyenQuanli.loaitk == "admin")
+			{
 
 			}
-			else if (PhanquyenQuanli.loaitk == "user")
+			else
 			{
 				btnthem.Enabled = false;
 				btnsua.Enabled = false;
 				btnxoa.Enabled = false;
-				btnthongke.Enabled = false;
-				HienThiDuLieu();
-			}
-			else
-			{
-				this.Show();
 			}
 		}
 
@@ -198,11 +191,11 @@ namespace Form_ShopConCung
 				// Hiển thị hình ảnh trên pictureBox1 nếu có đường dẫn, nếu không thì ẩn pictureBox1
 				if (!string.IsNullOrEmpty(txthinhanh.Text))
 				{
-					pictureBox1.ImageLocation = txthinhanh.Text;
+					imagesanpham.ImageLocation = txthinhanh.Text;
 				}
 				else
 				{
-					pictureBox1.Image = null;
+					imagesanpham.Image = null;
 					// pictureBox1.Hide();
 				}
 			}
@@ -446,6 +439,11 @@ namespace Form_ShopConCung
 		}
 
 		private void gbsearch_Enter(object sender, EventArgs e)
+		{
+
+		}
+
+		private void pictureBox1_Click_1(object sender, EventArgs e)
 		{
 
 		}
